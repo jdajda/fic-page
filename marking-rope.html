@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marking Rope — FIC</title>
+  <meta name="description" content="The FIC recommendation for rope marking: how to mark the middle of a rope, how to re-mark after a cut, and the band pattern used to read rope length at a glance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FIC home">
+        <span class="nav__logo-mark">FIC</span>
+        <span class="nav__logo-text">
+          <strong>Fédération Internationale</strong>
+          <small>de Canyonisme</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#mission">Mission</a></li>
+        <li><a href="index.html#board">Board</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li class="nav__item--sub is-current">
+          <button type="button" class="nav__sub-toggle" aria-expanded="false" aria-controls="navTools">
+            Tools <span class="nav__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__sub" id="navTools">
+            <li><a href="tools.html">All tools</a></li>
+            <li><a href="canyon-rating.html">Canyon Rating</a></li>
+            <li><a href="whistle-signals.html">Whistle Signals</a></li>
+            <li><a href="marking-rope.html" class="is-active" aria-current="page">Marking Rope</a></li>
+            <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#ric">RIC</a></li>
+        <li><a href="index.html#contact" class="btn btn--small">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HEAD ================= -->
+    <section class="pagehead">
+      <div class="pagehead__bg" style="background-image:url('https://images.unsplash.com/photo-1722424489978-be68f8624dbc?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="pagehead__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="tools.html">Tools</a>
+          <span aria-hidden="true">/</span>
+          <span class="crumbs__current">Marking Rope</span>
+        </nav>
+        <h1 class="pagehead__title">Marking Rope</h1>
+        <p class="pagehead__lead">A rope that has been cut is no longer the rope you planned. Marking tells the next person — and the next group — exactly what they are holding, and how much of it is left.</p>
+        <div class="pagehead__chips">
+          <span class="chip chip--accent">FIC recommendation</span>
+          <span class="chip">Middle mark</span>
+          <span class="chip">Length marks</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= IMPORTANT ================= -->
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="callout callout--warn reveal">
+          <span class="callout__icon" aria-hidden="true">⚠️</span>
+          <div>
+            <h3 class="callout__title">Important</h3>
+            <p>Always use a <strong>manufacturer-approved ink</strong>, because other inks may reduce rope strength. A marker pen left in a canyon is a tool; a marker pen that has destroyed your rope is a rescue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MIDDLE MARK ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Rope middle</p>
+          <h2 class="section__title">Marking the middle of the rope</h2>
+          <p class="section__lead">The middle mark is the point of the rope at which a rappel can be split safely — the place you can still get back from. It must be unmistakable, and it must be re-marked whenever the rope is shortened.</p>
+        </div>
+
+        <div class="mission__grid">
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">📍</span>
+            <h3>Initial marking</h3>
+            <p>A single band is marked at the rope middle, so that the two ends can be told apart and the point of a possible split is obvious to anyone using the rope.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">✂️</span>
+            <h3>After cutting</h3>
+            <p>When a rope is cut — that is, after a reduction of rope length — the <strong>old middle is crossed out</strong> and a <strong>new middle is marked</strong> at the true centre of the shortened rope.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">🧶</span>
+            <h3>Option: strand differentiation</h3>
+            <p>As an option, the middle can be marked by <strong>differentiating the rope strands</strong> rather than by adding a band — using a coloured strand next to a dark one, for instance.</p>
+          </article>
+        </div>
+
+        <div class="callout reveal" style="margin-top:clamp(30px,4vw,44px)">
+          <span class="callout__icon" aria-hidden="true">💡</span>
+          <div>
+            <h3 class="callout__title">Why the option exists</h3>
+            <p>Marking a band means touching the rope with ink. Where a rope is permanently rigged, marking by strand lets the middle stay visible without adding ink to a loaded section — which is exactly the section you least want to weaken.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LENGTH MARKS ================= -->
+    <section class="section rating">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Rope length</p>
+          <h2 class="section__title">Reading a length at a glance</h2>
+          <p class="section__lead">Bands grow as the distance from the end grows. The pattern is cumulative, so a rope can be measured by counting outwards from whichever end is nearest.</p>
+        </div>
+
+        <div class="rope-wrap reveal">
+          <table class="rope-table">
+            <thead>
+              <tr>
+                <th scope="col">Interval</th>
+                <th scope="col">Mark</th>
+                <th scope="col">What you see</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5 m</td>
+                <td><span class="bands" aria-hidden="true"><span class="band band--5"></span><span class="band band--5"></span></span></td>
+                <td>Two narrow bands</td>
+              </tr>
+              <tr>
+                <td>10 m</td>
+                <td><span class="bands" aria-hidden="true"><span class="band band--10"></span></span></td>
+                <td>One band</td>
+              </tr>
+              <tr>
+                <td>50 m</td>
+                <td><span class="bands" aria-hidden="true"><span class="band band--50"></span></span></td>
+                <td>One thick band</td>
+              </tr>
+              <tr>
+                <td>100 m</td>
+                <td><span class="bands" aria-hidden="true"><span class="band band--100"></span></span></td>
+                <td>One extra-thick band</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prose reveal" style="margin-top:24px">
+          <p>Worked example: a 185 m rope carries the 100 m band, then the 50 m band, then the 10 m band and the 5 m pair, on each side of the middle. Reading the bands outward from the middle gives the distance to that end without a tape measure.</p>
+        </div>
+
+        <div class="callout reveal" style="margin-top:26px">
+          <span class="callout__icon" aria-hidden="true">🖼️</span>
+          <div>
+            <h3 class="callout__title">Original plate</h3>
+            <p>The official illustrated recommendation, including photographs of marked ropes, is published by the FIC: <a href="https://ficanyon.org/international-whistle-system/marking-rope/" target="_blank" rel="noopener">FIC recommendation for rope marking ↗</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEXT / PREV ================= -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <nav class="pagenav reveal" aria-label="Tool navigation">
+          <a class="pagenav__link" href="whistle-signals.html">
+            <span class="pagenav__dir">← Previous</span>
+            <span class="pagenav__name">Whistle Signals</span>
+          </a>
+          <a class="pagenav__link pagenav__link--next" href="harnesses.html">
+            <span class="pagenav__dir">Next →</span>
+            <span class="pagenav__name">Harnesses &amp; Anchors</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">FIC</span>
+        <p class="footer__tagline">Fédération Internationale de Canyonisme — the Federation for International Canyoning.</p>
+        <a class="footer__social" href="https://www.facebook.com/FICanyoning" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#board">Board of Directors</a></li>
+          <li><a href="index.html#ric">RIC</a></li>
+          <li><a href="index.html#ric-history">RIC History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="canyon-rating.html">Canyon Rating</a></li>
+          <li><a href="whistle-signals.html">Whistle Signals</a></li>
+          <li><a href="marking-rope.html">Marking Rope</a></li>
+          <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          <li><a href="http://canyonaccident.org">Canyon Accident</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Federation</h4>
+        <ul>
+          <li><a href="index.html#members">Member Associations</a></li>
+          <li><a href="https://ficanyon.org/fic-members/">FIC Members</a></li>
+          <li><a href="https://ficanyon.org/fic-board-of-directors/">Board of Directors</a></li>
+          <li><a href="https://ficanyon.org/fic-application/">Membership application</a></li>
+          <li><a href="https://ficanyon.org/contact-fic/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© 2026 Fédération Internationale de Canyonisme. All rights reserved.</p>
+      <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

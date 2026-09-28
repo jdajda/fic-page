@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools for a safer canyon — FIC</title>
+  <meta name="description" content="Open standards and documents developed within the international canyoning community: the canyon rating system, whistle signals, rope marking, harnesses and accident reporting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FIC home">
+        <span class="nav__logo-mark">FIC</span>
+        <span class="nav__logo-text">
+          <strong>Fédération Internationale</strong>
+          <small>de Canyonisme</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#mission">Mission</a></li>
+        <li><a href="index.html#board">Board</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li class="nav__item--sub is-current">
+          <button type="button" class="nav__sub-toggle" aria-expanded="false" aria-controls="navTools">
+            Tools <span class="nav__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__sub" id="navTools">
+            <li><a href="tools.html" class="is-active" aria-current="page">All tools</a></li>
+            <li><a href="canyon-rating.html">Canyon Rating</a></li>
+            <li><a href="whistle-signals.html">Whistle Signals</a></li>
+            <li><a href="marking-rope.html">Marking Rope</a></li>
+            <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#ric">RIC</a></li>
+        <li><a href="index.html#contact" class="btn btn--small">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HEAD ================= -->
+    <section class="pagehead">
+      <div class="pagehead__bg" style="background-image:url('https://images.unsplash.com/photo-1770434379010-7bf35d5b8539?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="pagehead__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span class="crumbs__current">Tools</span>
+        </nav>
+        <h1 class="pagehead__title">Tools for a safer canyon</h1>
+        <p class="pagehead__lead">Open standards and reference documents developed within the international canyoning community. They exist so that a canyoneer in one country reads the same rating, hears the same whistle signal and marks their rope the same way as anyone else in the world.</p>
+        <div class="pagehead__chips">
+          <span class="chip chip--accent">5 core tools</span>
+          <span class="chip">Open and free</span>
+          <span class="chip">Multilingual</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CORE TOOLS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Core standards</p>
+          <h2 class="section__title">The reference documents</h2>
+          <p class="section__lead">Five tools that every member association works with. Each one has its own page with the full detail.</p>
+        </div>
+
+        <div class="mission__grid">
+          <a class="toolcard reveal" href="canyon-rating.html">
+            <span class="toolcard__icon" aria-hidden="true">🗺️</span>
+            <h3>Canyon Rating</h3>
+            <p>The international canyon rating system: vertical difficulty, aquatic difficulty and commitment, each on an open scale, written as a single code such as 2.3.III.</p>
+            <span class="toolcard__go">Open the system <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="toolcard reveal" href="whistle-signals.html">
+            <span class="toolcard__icon" aria-hidden="true">📣</span>
+            <h3>Whistle Signals</h3>
+            <p>One whistle, five signals. The international communication code used to coordinate a group on ropes, where voice cannot reach.</p>
+            <span class="toolcard__go">Open the signals <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="toolcard reveal" href="marking-rope.html">
+            <span class="toolcard__icon" aria-hidden="true">🧵</span>
+            <h3>Marking Rope</h3>
+            <p>How to mark the middle of a rope, how to re-mark it after a cut, and how bands are spaced so a length can be read at a glance.</p>
+            <span class="toolcard__go">Open the recommendation <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="toolcard reveal" href="harnesses.html">
+            <span class="toolcard__icon" aria-hidden="true">🪢</span>
+            <h3>Harnesses &amp; Anchors</h3>
+            <p>High and low anchor points compared: where the load is carried, and which configuration suits descending versus ascending.</p>
+            <span class="toolcard__go">Open the comparison <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="toolcard reveal" href="https://ficanyon.org/wp-content/uploads/2021/11/Statuts-FIC.pdf" target="_blank" rel="noopener">
+            <span class="toolcard__icon" aria-hidden="true">📜</span>
+            <h3>FIC Statutes</h3>
+            <p>The founding statutes of the Fédération Internationale de Canyonisme — how the federation is constituted and governed.</p>
+            <span class="toolcard__go">Open the PDF <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="toolcard reveal" href="http://canyonaccident.org" target="_blank" rel="noopener">
+            <span class="toolcard__icon" aria-hidden="true">🚨</span>
+            <h3>Canyon Accident</h3>
+            <p>A shared database and reporting resource for canyon accidents, so that what happens once does not have to happen twice.</p>
+            <span class="toolcard__go">Visit the site <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APPLICATIONS ================= -->
+    <section class="section resources">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Forms</p>
+          <h2 class="section__title">Applications &amp; documents</h2>
+          <p class="section__lead">The federation's own paperwork, available in the four languages of its working community.</p>
+        </div>
+
+        <div class="resources__grid">
+          <article class="resource reveal">
+            <span class="resource__icon" aria-hidden="true">📝</span>
+            <div class="resource__body">
+              <h3><a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_2018.pdf" target="_blank" rel="noopener">FIC Application</a></h3>
+              <p>Join the federation — also in <a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_spanish.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_FRENCH.pdf" target="_blank" rel="noopener">French</a> and <a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_ITALIAN.pdf" target="_blank" rel="noopener">Italian</a>.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="resource reveal">
+            <span class="resource__icon" aria-hidden="true">🎪</span>
+            <div class="resource__body">
+              <h3><a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_English.pdf" target="_blank" rel="noopener">RIC Application</a></h3>
+              <p>Host a RIC in your country — also in <a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_2018_SPANISH.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_2018_FRENCH.pdf" target="_blank" rel="noopener">French</a> and <a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_2018_ITALIAN.pdf" target="_blank" rel="noopener">Italian</a>.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="resource reveal">
+            <span class="resource__icon" aria-hidden="true">📐</span>
+            <div class="resource__body">
+              <h3><a href="https://ficanyon.org/wp-content/uploads/2025/07/Canyoning-Harnesses-Anchor-Points.pdf" target="_blank" rel="noopener">Harnesses diagram (PDF)</a></h3>
+              <p>The original illustrated plate of high and low anchor points, ready to print.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="resource reveal">
+            <span class="resource__icon" aria-hidden="true">🌍</span>
+            <div class="resource__body">
+              <h3><a href="index.html#ric-history">RIC History</a></h3>
+              <p>Every RIC since 2003 — the full list of editions, hosts and countries.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section cta" id="contact">
+      <div class="container cta__box reveal">
+        <div class="cta__text">
+          <p class="section__kicker">Get involved</p>
+          <h2 class="section__title">Help write the next standard</h2>
+          <p>These tools are community documents. If your association has field experience that contradicts what you read here, the federation wants to hear it.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="https://ficanyon.org/contact-fic/">Contact the FIC</a>
+          <a class="btn btn--ghost" href="index.html#members">See member associations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">FIC</span>
+        <p class="footer__tagline">Fédération Internationale de Canyonisme — the Federation for International Canyoning.</p>
+        <a class="footer__social" href="https://www.facebook.com/FICanyoning" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#board">Board of Directors</a></li>
+          <li><a href="index.html#ric">RIC</a></li>
+          <li><a href="index.html#ric-history">RIC History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="canyon-rating.html">Canyon Rating</a></li>
+          <li><a href="whistle-signals.html">Whistle Signals</a></li>
+          <li><a href="marking-rope.html">Marking Rope</a></li>
+          <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          <li><a href="http://canyonaccident.org">Canyon Accident</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Federation</h4>
+        <ul>
+          <li><a href="index.html#members">Member Associations</a></li>
+          <li><a href="https://ficanyon.org/fic-members/">FIC Members</a></li>
+          <li><a href="https://ficanyon.org/fic-board-of-directors/">Board of Directors</a></li>
+          <li><a href="https://ficanyon.org/fic-application/">Membership application</a></li>
+          <li><a href="https://ficanyon.org/contact-fic/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© 2026 Fédération Internationale de Canyonisme. All rights reserved.</p>
+      <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

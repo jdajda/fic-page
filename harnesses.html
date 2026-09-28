@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canyoning Harnesses — FIC</title>
+  <meta name="description" content="High and low anchor point compared: where the harness carries the load, and which configuration suits descending versus ascending in canyoning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FIC home">
+        <span class="nav__logo-mark">FIC</span>
+        <span class="nav__logo-text">
+          <strong>Fédération Internationale</strong>
+          <small>de Canyonisme</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#mission">Mission</a></li>
+        <li><a href="index.html#board">Board</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li class="nav__item--sub is-current">
+          <button type="button" class="nav__sub-toggle" aria-expanded="false" aria-controls="navTools">
+            Tools <span class="nav__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__sub" id="navTools">
+            <li><a href="tools.html">All tools</a></li>
+            <li><a href="canyon-rating.html">Canyon Rating</a></li>
+            <li><a href="whistle-signals.html">Whistle Signals</a></li>
+            <li><a href="marking-rope.html">Marking Rope</a></li>
+            <li><a href="harnesses.html" class="is-active" aria-current="page">Harnesses &amp; Anchors</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#ric">RIC</a></li>
+        <li><a href="index.html#contact" class="btn btn--small">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HEAD ================= -->
+    <section class="pagehead">
+      <div class="pagehead__bg" style="background-image:url('https://images.unsplash.com/photo-1759158487840-f7e6ec539b4e?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="pagehead__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="tools.html">Tools</a>
+          <span aria-hidden="true">/</span>
+          <span class="crumbs__current">Harnesses &amp; Anchors</span>
+        </nav>
+        <h1 class="pagehead__title">Canyoning Harnesses</h1>
+        <p class="pagehead__lead">Where the harness takes your weight changes how you move. A high anchor point and a low anchor point are not better and worse — they are answers to two different questions: where am I going, and how do I get back up?</p>
+        <div class="pagehead__chips">
+          <span class="chip chip--accent">High anchor</span>
+          <span class="chip">Low anchor</span>
+          <span class="chip">Illustrated PDF</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPARISON ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Anchor points</p>
+          <h2 class="section__title">High compared with low</h2>
+          <p class="section__lead">Both configurations are standard. The decision is about the shape of the day, not about the quality of the equipment.</p>
+        </div>
+
+        <div class="compare">
+          <article class="compare__card reveal">
+            <span class="compare__badge">High</span>
+            <h3>High anchor point</h3>
+            <dl class="compare__rows">
+              <div class="compare__row">
+                <dt>Pressure &amp; balance zone</dt>
+                <dd>Middle abdomen</dd>
+              </div>
+              <div class="compare__row">
+                <dt>Intended for</dt>
+                <dd>Users who prioritize vertical progression in a downward direction while minimizing the risk of inversion.</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="compare__card compare__card--low reveal">
+            <span class="compare__badge">Low</span>
+            <h3>Low anchor point</h3>
+            <dl class="compare__rows">
+              <div class="compare__row">
+                <dt>Pressure &amp; balance zone</dt>
+                <dd>Lower abdomen</dd>
+              </div>
+              <div class="compare__row">
+                <dt>Intended for</dt>
+                <dd>For experienced users who prioritize efficiency while ascending.</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY IT MATTERS ================= -->
+    <section class="section rating">
+      <div class="container">
+        <h2 class="subhead reveal">Why the difference matters</h2>
+
+        <div class="prose reveal">
+          <p>An anchor point placed high on the body keeps you upright when the rope is loaded. Descending, that is what you want: your weight hangs beneath the tie-in point, and the risk of being inverted — and therefore of being unable to reach your own descender — is reduced.</p>
+          <p>An anchor point placed lower moves the tie-in towards the hips. For a group used to climbing, that positioning is familiar and keeps the system efficient when the day involves a lot of ascending — for instance where a canyon is entered and left by repeated up-and-down routes.</p>
+        </div>
+
+        <div class="callout reveal" style="margin-top:clamp(28px,4vw,40px)">
+          <span class="callout__icon" aria-hidden="true">🎯</span>
+          <div>
+            <h3 class="callout__title">The question to ask</h3>
+            <p>Not "which harness is safer?" but <strong>"where is this group going?"</strong> A descent-heavy canyon favours the high anchor point; an ascent-heavy route favours the low one. Both are normal choices, and the FIC publishes both without ranking them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PLATE ================= -->
+    <section class="section">
+      <div class="container">
+        <h2 class="subhead reveal">The original plate</h2>
+        <div class="prose reveal">
+          <p>The full illustrated plate — showing both configurations racked in detail, with the pressure and balance zones marked on the body and the load paths drawn through the harness — is published by the FIC as a printable PDF.</p>
+        </div>
+        <div class="rating__actions reveal" style="justify-content:flex-start">
+          <a class="btn btn--primary" href="https://ficanyon.org/wp-content/uploads/2025/07/Canyoning-Harnesses-Anchor-Points.pdf" target="_blank" rel="noopener">Download the PDF ↗</a>
+          <a class="btn btn--ghost" href="https://ficanyon.org/" target="_blank" rel="noopener">ficanyon.org ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEXT / PREV ================= -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <nav class="pagenav reveal" aria-label="Tool navigation">
+          <a class="pagenav__link" href="marking-rope.html">
+            <span class="pagenav__dir">← Previous</span>
+            <span class="pagenav__name">Marking Rope</span>
+          </a>
+          <a class="pagenav__link pagenav__link--next" href="tools.html">
+            <span class="pagenav__dir">Next →</span>
+            <span class="pagenav__name">All tools</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">FIC</span>
+        <p class="footer__tagline">Fédération Internationale de Canyonisme — the Federation for International Canyoning.</p>
+        <a class="footer__social" href="https://www.facebook.com/FICanyoning" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#board">Board of Directors</a></li>
+          <li><a href="index.html#ric">RIC</a></li>
+          <li><a href="index.html#ric-history">RIC History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="canyon-rating.html">Canyon Rating</a></li>
+          <li><a href="whistle-signals.html">Whistle Signals</a></li>
+          <li><a href="marking-rope.html">Marking Rope</a></li>
+          <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          <li><a href="http://canyonaccident.org">Canyon Accident</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Federation</h4>
+        <ul>
+          <li><a href="index.html#members">Member Associations</a></li>
+          <li><a href="https://ficanyon.org/fic-members/">FIC Members</a></li>
+          <li><a href="https://ficanyon.org/fic-board-of-directors/">Board of Directors</a></li>
+          <li><a href="https://ficanyon.org/fic-application/">Membership application</a></li>
+          <li><a href="https://ficanyon.org/contact-fic/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© 2026 Fédération Internationale de Canyonisme. All rights reserved.</p>
+      <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

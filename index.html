@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIC — Fédération Internationale de Canyonisme</title>
+  <meta name="description" content="The Federation for International Canyoning (FIC) unites recreational canyoning associations across the world to share techniques, safety knowledge and the spirit of the canyon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FIC home">
+        <span class="nav__logo-mark">FIC</span>
+        <span class="nav__logo-text">
+          <strong>Fédération Internationale</strong>
+          <small>de Canyonisme</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#mission">Mission</a></li>
+        <li><a href="index.html#board">Board</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li class="nav__item--sub">
+          <button type="button" class="nav__sub-toggle" aria-expanded="false" aria-controls="navTools">
+            Tools <span class="nav__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__sub" id="navTools">
+            <li><a href="tools.html">All tools</a></li>
+            <li><a href="canyon-rating.html">Canyon Rating</a></li>
+            <li><a href="whistle-signals.html">Whistle Signals</a></li>
+            <li><a href="marking-rope.html">Marking Rope</a></li>
+            <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#ric">RIC</a></li>
+        <li><a href="index.html#contact" class="btn btn--small">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1721338752673-91b7603f2ae0?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="hero__kicker">Fédération Internationale de Canyonisme</p>
+        <h1 class="hero__title">Connecting <span>canyoneers</span><br>across the world</h1>
+        <p class="hero__subtitle">FIC unites recreational canyoning associations from five continents — sharing techniques, rating systems, safety knowledge and the pure joy of the canyon.</p>
+        <div class="hero__actions">
+          <a href="#mission" class="btn btn--primary">Explore our mission</a>
+          <a href="#gallery" class="btn btn--ghost">See the canyon</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats" aria-label="FIC in numbers">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__value" data-count="20">0</span>
+          <span class="stat__label">Member countries</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="3">0</span>
+          <span class="stat__label">Associations per country</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="2003">0</span>
+          <span class="stat__label">RIC tradition since</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__value" data-count="5">0</span>
+          <span class="stat__label">Continents united</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1770174079914-c5b62a24f072?fm=jpg&q=70&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Canyoneer walking through a narrow river canyon" loading="lazy">
+          <img class="about__media-small" src="https://images.unsplash.com/photo-1769125087746-aa6891859105?fm=jpg&q=70&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Waterfall cascading into a turquoise pool in the Grand Canyon" loading="lazy">
+        </div>
+        <div class="about__content reveal">
+          <p class="section__kicker">Who we are</p>
+          <h2 class="section__title">A federation born in the canyons</h2>
+          <p>The history of the <strong>Fédération Internationale de Canyonisme</strong> begins in 2003, with the desire to create an international canyon festival. These events — the <em>Rassemblement Internationale de Canyon</em> (RIC) — still bring canyoneers together every year.</p>
+          <p>In 2014, French canyoneers joined forces with enthusiasts from around the world to found the <strong>International Association of Amateur Canyoning</strong> (IAAC), dedicated to recreational canyoning. The word "amateur" travelled poorly between languages, so the association became <strong>FIC</strong> — in French, <em>"Fédération Internationale de Canyonisme"</em>, and in English, the <em>"Federation for International Canyoning"</em>.</p>
+          <blockquote class="about__quote">
+            "The board of directors has decided to only use FIC."
+          </blockquote>
+          <a href="#mission" class="btn btn--primary">Why we exist <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MISSION ================= -->
+    <section class="section mission" id="mission">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Our mission</p>
+          <h2 class="section__title">Seven goals, one canyon community</h2>
+          <p class="section__lead">Everything FIC does serves one simple idea: recreational canyoning, done safely, together and in respect of the places we love.</p>
+        </div>
+
+        <div class="mission__grid">
+          <article class="card reveal">
+            <span class="card__icon">🤝</span>
+            <h3>Network canyoneers</h3>
+            <p>Facilitate networking of canyoneers around the world to exchange information about canyoning.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">🌍</span>
+            <h3>Develop the sport</h3>
+            <p>Develop international canyoning as an accessible, recreational discipline in every country.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">⚖️</span>
+            <h3>Support associations</h3>
+            <p>Support canyon associations with their political, legal, administrative and economic institutions.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">🌿</span>
+            <h3>Respect for nature</h3>
+            <p>Develop respect for nature and encourage low-impact practice inside and around the canyon.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">🔬</span>
+            <h3>Share knowledge</h3>
+            <p>Develop scientific knowledge of the practice environment and share it with the community.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">🪢</span>
+            <h3>Technique &amp; rescue</h3>
+            <p>Build a common reflection on canyon techniques, trainings and rescue standards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOARD OF DIRECTORS ================= -->
+    <section class="section board" id="board">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Board of Directors</p>
+          <h2 class="section__title">The people behind the federation</h2>
+          <p class="section__lead">The board is elected by the member associations and steers the FIC between RICs. Four officers form the executive board; committees and assistants carry the day-to-day work of safety, environment, legal, events and communications.</p>
+        </div>
+
+        <div class="board__group reveal">
+          <h3 class="board__group-title">Executive board <span class="board__year">2025</span></h3>
+          <div class="board__grid board__grid--exec">
+            <article class="board__card">
+              <span class="board__flag" aria-hidden="true">🇫🇷</span>
+              <h4 class="board__name">Guillaume Le Prunennec</h4>
+              <p class="board__role">President</p>
+              <p class="board__country">France</p>
+            </article>
+            <article class="board__card">
+              <span class="board__flag" aria-hidden="true">🇮🇹</span>
+              <h4 class="board__name">Bruno Martinelli</h4>
+              <p class="board__role">Vice-President</p>
+              <p class="board__country">Italy</p>
+            </article>
+            <article class="board__card">
+              <span class="board__flag" aria-hidden="true">🇪🇸</span>
+              <h4 class="board__name">Lluis Domingo</h4>
+              <p class="board__role">Treasurer</p>
+              <p class="board__country">Spain</p>
+            </article>
+            <article class="board__card">
+              <span class="board__flag" aria-hidden="true">🇪🇸</span>
+              <h4 class="board__name">María Rodrigo Stínus</h4>
+              <p class="board__role">General Secretary</p>
+              <p class="board__country">Spain</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="board__group reveal">
+          <h3 class="board__group-title">Committees</h3>
+          <div class="board__grid">
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇪🇸</span>
+              <h4 class="board__name">Xavier Arregui</h4>
+              <p class="board__role">Safety and Techniques</p>
+              <p class="board__country">Spain</p>
+            </article>
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇮🇷</span>
+              <h4 class="board__name">Tina Andayesh</h4>
+              <p class="board__role">Environment</p>
+              <p class="board__country">Iran</p>
+            </article>
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇧🇷</span>
+              <h4 class="board__name">Henry Lummertz</h4>
+              <p class="board__role">Legal</p>
+              <p class="board__country">Brazil</p>
+            </article>
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇩🇪</span>
+              <h4 class="board__name">Thomas Stieglitz</h4>
+              <p class="board__role">Events &amp; RIC</p>
+              <p class="board__country">Germany</p>
+            </article>
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇲🇽</span>
+              <h4 class="board__name">José Benavides</h4>
+              <p class="board__role">Communications</p>
+              <p class="board__country">Mexico</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="board__group reveal">
+          <h3 class="board__group-title">Assistants</h3>
+          <div class="board__grid">
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇺🇸</span>
+              <h4 class="board__name">Adolfo Isassi</h4>
+              <p class="board__role">Technics</p>
+              <p class="board__country">USA</p>
+            </article>
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇵🇹</span>
+              <h4 class="board__name">João Martins</h4>
+              <p class="board__role">Communications</p>
+              <p class="board__country">Portugal</p>
+            </article>
+            <article class="board__card board__card--compact">
+              <span class="board__flag" aria-hidden="true">🇫🇷</span>
+              <h4 class="board__name">Lionel Bernard</h4>
+              <p class="board__role">Events &amp; RISC</p>
+              <p class="board__country">France</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="board__figure reveal">
+          <a class="board__diagram" href="https://ficanyon.org/wp-content/uploads/2025/12/board-structure-1.png" target="_blank" rel="noopener">
+            <img src="https://i0.wp.com/ficanyon.org/wp-content/uploads/2025/12/board-structure-1.png?resize=1200,1014&amp;ssl=1" width="1200" height="1014" alt="Official FIC Board Directors 2025 structure diagram" loading="lazy">
+            <span class="board__diagram-caption">Official 2025 structure diagram — open full size ↗</span>
+          </a>
+          <p class="board__note">The full roster, updated after every General Assembly, is published on the official FIC site.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Gallery</p>
+          <h2 class="section__title">The world of canyoneers</h2>
+          <p class="section__lead">Water, stone and rope — moments captured by canyoners in some of the wildest gorges on Earth. Click any photo to enlarge.</p>
+        </div>
+      </div>
+
+      <div class="gallery__grid" id="galleryGrid">
+        <figure class="gallery__item gallery__item--wide reveal">
+          <img src="https://images.unsplash.com/photo-1721338752673-91b7603f2ae0?fm=jpg&q=70&w=1400&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A canyoneer wading through a narrow river canyon" loading="lazy">
+          <figcaption>Wading the narrows</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1769175053708-cd33e4959180?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="People cooling off by a waterfall in a lush forest" loading="lazy">
+          <figcaption>Pool below the fall</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1770174079914-c5b62a24f072?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A stream flowing through a narrow canyon" loading="lazy">
+          <figcaption>Carved by water</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1770434379010-7bf35d5b8539?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A winding river flowing through a rocky canyon" loading="lazy">
+          <figcaption>The long way down</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1769125087746-aa6891859105?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A tall waterfall cascading into a turquoise pool" loading="lazy">
+          <figcaption>Mooney Falls</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="https://images.unsplash.com/photo-1774790571181-f54b9cf05ac8?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="People below towering canyon walls with rock carvings" loading="lazy">
+          <figcaption>Walls of the Siq</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1722424489978-be68f8624dbc?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A person crossing a suspension walkway above a canyon" loading="lazy">
+          <figcaption>Above the gorge</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1759158487840-f7e6ec539b4e?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="People on a bridge overlooking powerful waterfalls" loading="lazy">
+          <figcaption>Victoria Falls</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1482709746041-1adc5a8aef00?fm=jpg&q=70&w=900&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Colorful layered rocks of the Grand Canyon" loading="lazy">
+          <figcaption>Grand Canyon</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide reveal">
+          <img src="https://images.unsplash.com/photo-1763793927415-7f4f010f1fb6?fm=jpg&q=70&w=1400&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Sunrise over a rugged desert canyon landscape" loading="lazy">
+          <figcaption>First light in the canyon</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= RESOURCES ================= -->
+    <section class="section resources" id="resources">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Resources</p>
+          <h2 class="section__title">Tools for a safer canyon</h2>
+          <p class="section__lead">Open standards and documents developed within the international community.</p>
+        </div>
+
+        <div class="resources__grid">
+          <article class="resource reveal">
+            <span class="resource__icon">🗺️</span>
+            <div class="resource__body">
+              <h3><a href="canyon-rating.html">Canyon Rating</a></h3>
+              <p>The international canyon rating system — vertical, aquatic and commitment.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">📣</span>
+            <div class="resource__body">
+              <h3><a href="whistle-signals.html">Whistle Signals</a></h3>
+              <p>The international whistle system for communication in the gorge.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">🪢</span>
+            <div class="resource__body">
+              <h3><a href="harnesses.html">Canyoning Harnesses</a></h3>
+              <p>High and low anchor points compared, with the original plate.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">📜</span>
+            <div class="resource__body">
+              <h3><a href="https://ficanyon.org/wp-content/uploads/2021/11/Statuts-FIC.pdf" target="_blank" rel="noopener">FIC Statutes</a></h3>
+              <p>The founding statutes of the Fédération Internationale de Canyonisme.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">🧵</span>
+            <div class="resource__body">
+              <h3><a href="marking-rope.html">Marking Rope</a></h3>
+              <p>Standards for marking rope middles and reading rope length.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">🚨</span>
+            <div class="resource__body">
+              <h3><a href="http://canyonaccident.org">Canyon Accident</a></h3>
+              <p>A shared database and reporting resource for canyon accidents.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">📝</span>
+            <div class="resource__body">
+              <h3><a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_2018.pdf" target="_blank" rel="noopener">FIC Application</a></h3>
+              <p>Join the federation — also in <a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_spanish.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_FRENCH.pdf" target="_blank" rel="noopener">French</a> and <a href="https://ficanyon.org/wp-content/uploads/2021/11/FIC_application_ITALIAN.pdf" target="_blank" rel="noopener">Italian</a>.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+          <article class="resource reveal">
+            <span class="resource__icon">🎪</span>
+            <div class="resource__body">
+              <h3><a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_English.pdf" target="_blank" rel="noopener">RIC Application</a></h3>
+              <p>Host a RIC in your country — also in <a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_2018_SPANISH.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_2018_FRENCH.pdf" target="_blank" rel="noopener">French</a> and <a href="https://ficanyon.org/wp-content/uploads/2021/11/Rassemblement-International-Canyoning-RIC-Application_2018_ITALIAN.pdf" target="_blank" rel="noopener">Italian</a>.</p>
+            </div>
+            <span class="resource__arrow" aria-hidden="true">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CANYON RATING ================= -->
+    <section class="section rating" id="rating">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Canyon Rating</p>
+          <h2 class="section__title">How FIC rates a canyon</h2>
+          <p class="section__lead">One code, three numbers — a vertical difficulty, an aquatic difficulty and a level of commitment, each judged on its own open scale.</p>
+        </div>
+
+        <div class="rating__code reveal" aria-label="Rating notation example">
+          <div class="rating__code-part">
+            <span class="rating__code-letter">v</span>
+            <span class="rating__code-num">2</span>
+            <span class="rating__code-label">Vertical difficulty<br>1–7</span>
+          </div>
+          <span class="rating__code-dot">·</span>
+          <div class="rating__code-part">
+            <span class="rating__code-letter">a</span>
+            <span class="rating__code-num">3</span>
+            <span class="rating__code-label">Aquatic difficulty<br>1–7</span>
+          </div>
+          <span class="rating__code-dot">·</span>
+          <div class="rating__code-part">
+            <span class="rating__code-letter">C</span>
+            <span class="rating__code-num">III</span>
+            <span class="rating__code-label">Commitment &amp; scope<br>I–VI</span>
+          </div>
+        </div>
+
+        <div class="prose reveal" style="text-align:center;margin-inline:auto">
+          <p>A canyon rated <em>v2 a3 III</em> is written <strong>2.3.III</strong> — easy on the ropes, moderate in the water, and a half-day commitment. Each column is independent: only one criterion per column sets the category.</p>
+        </div>
+
+        <div class="rating__actions reveal">
+          <a class="btn btn--primary" href="canyon-rating.html">Open the full rating system <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="tools.html">Browse all tools</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MEMBERS ================= -->
+    <section class="section members" id="members">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Members</p>
+          <h2 class="section__title">One community, twenty countries</h2>
+          <p class="section__lead">Membership in the FIC is restricted to associations of recreational canyoneers — guide associations and paid guides may not be members.</p>
+        </div>
+
+        <ul class="members__grid">
+          <li class="member reveal"><span class="member__flag">🇩🇿</span><span>Algeria</span></li>
+          <li class="member reveal"><span class="member__flag">🇦🇺</span><span>Australia</span></li>
+          <li class="member reveal"><span class="member__flag">🇧🇪</span><span>Belgium</span></li>
+          <li class="member reveal"><span class="member__flag">🇧🇷</span><span>Brazil</span></li>
+          <li class="member reveal"><span class="member__flag">🇨🇦</span><span>Canada</span></li>
+          <li class="member reveal"><span class="member__flag">🇨🇴</span><span>Colombia</span></li>
+          <li class="member reveal"><span class="member__flag">🇪🇨</span><span>Ecuador</span></li>
+          <li class="member reveal"><span class="member__flag">🇫🇷</span><span>France</span></li>
+          <li class="member reveal"><span class="member__flag">🇩🇪</span><span>Germany</span></li>
+          <li class="member reveal"><span class="member__flag">🇬🇷</span><span>Greece</span></li>
+          <li class="member reveal"><span class="member__flag">🇮🇷</span><span>Iran</span></li>
+          <li class="member reveal"><span class="member__flag">🇮🇱</span><span>Israel</span></li>
+          <li class="member reveal"><span class="member__flag">🇮🇹</span><span>Italy</span></li>
+          <li class="member reveal"><span class="member__flag">🇲🇽</span><span>Mexico</span></li>
+          <li class="member reveal"><span class="member__flag">🇳🇵</span><span>Nepal</span></li>
+          <li class="member reveal"><span class="member__flag">🇵🇹</span><span>Portugal</span></li>
+          <li class="member reveal"><span class="member__flag">🇪🇸</span><span>Spain</span></li>
+          <li class="member reveal"><span class="member__flag">🇹🇷</span><span>Turkey</span></li>
+          <li class="member reveal"><span class="member__flag">🇺🇸</span><span>USA</span></li>
+          <li class="member reveal"><span class="member__flag">🇿🇲</span><span>Zambia</span></li>
+        </ul>
+        <p class="members__note reveal">Each country can have up to three representative associations, splitting their vote on any FIC issue.</p>
+      </div>
+
+      <!-- Member associations -->
+      <div class="container assoc-block">
+        <div class="assoc__head reveal">
+          <h3 class="assoc__title">Member associations</h3>
+          <p class="assoc__lead">The associations that make up the federation — founding members of 2014, then newcomers joining year after year. Select an association to visit its own site.</p>
+        </div>
+
+        <div class="assoc__filters reveal" role="group" aria-label="Filter member associations by region">
+          <button type="button" class="assoc__filter is-active" data-region="all">All</button>
+          <button type="button" class="assoc__filter" data-region="europe">Europe</button>
+          <button type="button" class="assoc__filter" data-region="americas">Americas</button>
+          <button type="button" class="assoc__filter" data-region="africa-me">Africa &amp; Middle East</button>
+          <button type="button" class="assoc__filter" data-region="asia-pacific">Asia &amp; Pacific</button>
+        </div>
+
+        <p class="assoc__empty" id="assocEmpty" hidden>No member association in this region yet.</p>
+
+        <ul class="assoc__grid" id="assocGrid">
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://deutschercanyoningverein.de" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇩🇪</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Deutscher Canyoning Verein</strong>
+                <span class="assoc__abbr">DCV · Germany</span>
+                <span class="assoc__meta">Founded 1995</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://gbcan.org.br" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇧🇷</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Grupo Brasileiro de Canionismo</strong>
+                <span class="assoc__abbr">GBCAN · Brazil</span>
+                <span class="assoc__meta">Founded 2011</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://www.americancanyoneers.org" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇺🇸</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Coalition of American Canyoneers</strong>
+                <span class="assoc__abbr">CAC · USA</span>
+                <span class="assoc__meta">Founded 2012</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://ficanyon.org/uniao-belga-de-espeleologia/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇧🇪</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">União Belga de Espeleologia</strong>
+                <span class="assoc__abbr">ASBL · Belgium</span>
+                <span class="assoc__meta">Founded 1984</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="africa-me">
+            <a href="https://msfi.ir" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇮🇷</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">I.R. Iran Mountaineering &amp; Sport Climbing Federation</strong>
+                <span class="assoc__abbr">MSFI · Iran</span>
+                <span class="assoc__meta">Founding member</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://feespeleo.com" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇪🇸</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Federación Española Espeleología</strong>
+                <span class="assoc__abbr">FEE · Spain</span>
+                <span class="assoc__meta">Founding member</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://fedme.es" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇪🇸</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Federación Española de Deportes de Montaña y Escalada</strong>
+                <span class="assoc__abbr">FEDME · Spain</span>
+                <span class="assoc__meta">Founded 1922</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="http://ecdcportugal.com" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇵🇹</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Espeleo Club Descenso de Cañones</strong>
+                <span class="assoc__abbr">ECDC · Portugal</span>
+                <span class="assoc__meta">Founded 2005</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://www.fcmportugal.com" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇵🇹</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Federação de Campismo e Montanhismo de Portugal</strong>
+                <span class="assoc__abbr">FCMP · Portugal</span>
+                <span class="assoc__meta">Founded 1978</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://www.fhs.gr" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇬🇷</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Hellenic Federation of Speleology</strong>
+                <span class="assoc__abbr">FHS · Greece</span>
+                <span class="assoc__meta">Founding member</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://ffspeleo.fr" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇫🇷</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Fédération Française de Spéléologie</strong>
+                <span class="assoc__abbr">FFS · France</span>
+                <span class="assoc__meta">Founded 1963</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://ficanyon.org/canyon-team-flandres/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇧🇪</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Canyon Team Vlaanderen</strong>
+                <span class="assoc__abbr">CTV · Belgium</span>
+                <span class="assoc__meta">Founded 2006</span>
+              </span>
+              <span class="assoc__tags"><span class="tag tag--founding">Founding</span><span class="tag">Associate</span></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://www.asociacioncolombianadecanyoning.com" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇨🇴</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Asociación Colombiana de Canyoning</strong>
+                <span class="assoc__abbr">Colombia Canyon · Colombia</span>
+                <span class="assoc__meta">Founded 2012 · member since 2015</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://www.facebook.com/profile.php?id=100064589776578" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇪🇨</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Asociación Ecuatoriana de Canyoning y Exploración de Cañones</strong>
+                <span class="assoc__abbr">AECEC · Ecuador</span>
+                <span class="assoc__meta">Founded 2015 · member since 2015</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="africa-me">
+            <a href="https://www.facebook.com/speleobejaia/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇩🇿</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Club de Spéléologie et Sports de Montagne Béjaia</strong>
+                <span class="assoc__abbr">CSSMB · Algeria</span>
+                <span class="assoc__meta">Founded 2008 · member since 2016</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://asociacionenjalisco.wixsite.com/canyonsmexico" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇲🇽</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Cañones en Mexico Asociación A.C.</strong>
+                <span class="assoc__abbr">Mexico</span>
+                <span class="assoc__meta">Founded 2007 · member since 2016</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="http://www.aic-canyoning.it" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇮🇹</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Associazione Italiana Canyoning</strong>
+                <span class="assoc__abbr">AIC · Italy</span>
+                <span class="assoc__meta">Founded 1998 · member since 2019</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="http://www.cai.it/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇮🇹</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Club Alpino Italiano</strong>
+                <span class="assoc__abbr">CAI · Italy</span>
+                <span class="assoc__meta">Founded 1963 · member since 2019</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://www.fbcanionismo.org.br/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇧🇷</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Federação Brasiliense de Canionismo</strong>
+                <span class="assoc__abbr">FBC · Brazil</span>
+                <span class="assoc__meta">Founded 2017 · member since 2019</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="asia-pacific">
+            <a href="https://australiancanyoning.org.au/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇦🇺</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Australian Canyoning Association</strong>
+                <span class="assoc__abbr">ACA · Australia</span>
+                <span class="assoc__meta">Founded 2018 · member since 2019</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="asia-pacific">
+            <a href="https://nepalcanyoning.org.np/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇳🇵</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Nepal Canyoning Association</strong>
+                <span class="assoc__abbr">NCA · Nepal</span>
+                <span class="assoc__meta">Founded 2007 · member since 2019</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="africa-me">
+            <a href="https://ficanyon.org/fic-members/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇿🇲</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Zambia Canyoning Association</strong>
+                <span class="assoc__abbr">Zambia</span>
+                <span class="assoc__meta">Founded 2020 · member since 2020</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="africa-me">
+            <a href="https://www.facebook.com/Israel.canyoning.organization/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇮🇱</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Israel Canyoning Association</strong>
+                <span class="assoc__abbr">Israel</span>
+                <span class="assoc__meta">Member since 2020</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="europe">
+            <a href="https://www.verticalwatercanyoning.com/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇮🇹</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Vertical Water</strong>
+                <span class="assoc__abbr">Italy</span>
+                <span class="assoc__meta">Member since 2021</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="asia-pacific">
+            <a href="https://www.kad.org.tr/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇹🇷</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Kanyonve Doğa Sporları Araştırma Derneği</strong>
+                <span class="assoc__abbr">KAD · Turkey</span>
+                <span class="assoc__meta">Member since 2021</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://www.facebook.com/ClubXel" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇲🇽</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Club XEL</strong>
+                <span class="assoc__abbr">Mexico</span>
+                <span class="assoc__meta">Founded 2009 · member since 2024</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+          <li class="assoc reveal" data-region="americas">
+            <a href="https://speleo.qc.ca/" target="_blank" rel="noopener">
+              <span class="assoc__flag" aria-hidden="true">🇨🇦</span>
+              <span class="assoc__body">
+                <strong class="assoc__name">Spéléo Québec</strong>
+                <span class="assoc__abbr">Canada</span>
+                <span class="assoc__meta">Founded 1970 · member since 2024</span>
+              </span>
+              <span class="assoc__tags"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= RIC ================= -->
+    <section class="ric" id="ric">
+      <div class="ric__bg" style="background-image:url('https://images.unsplash.com/photo-1769429385265-bcc13159c849?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="ric__overlay"></div>
+      <div class="ric__content container reveal">
+        <p class="section__kicker section__kicker--light">Rassemblement Internationale de Canyon</p>
+        <h2 class="ric__title">The gathering that started it all</h2>
+        <p>RIC stands for three French words — <em>Rassemblement Internationale de Canyon</em>. The idea came from two people: <strong>Rich Carlson</strong> from the USA and <strong>Koen Viaene</strong> from Belgium, who wanted a venue where canyoneers from around the world could meet and share information. Koen organised the first two RICs in Europe, Rich brought them to North America in Mexico.</p>
+        <p>Since then, local canyoneers have kept co-sponsoring canyon rendezvous around the planet, year after year. Wishes are made, people get excited, plans develop — and a RIC is born. Typically about <strong>200 individuals from at least 15 countries</strong> attend.</p>
+        <div class="ric__actions">
+          <a href="https://ficanyon.org/ric/" class="btn btn--primary">Discover the RIC</a>
+          <a href="https://ficanyon.org/events" class="btn btn--ghost">Upcoming events</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RIC TIMELINE ================= -->
+    <section class="section timeline" id="ric-history">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">RIC History</p>
+          <h2 class="section__title">Every RIC since 2003</h2>
+          <p class="section__lead">Twenty-two editions, five continents, one shared thread. The list below is the official record as published by the FIC.</p>
+        </div>
+
+        <ol class="timeline__list">
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2025</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Italy</h3>
+              <p class="timeline__host">Coordinated by AIC (Associazione Italiana Canyoning) &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2024</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Mexico — Hidalgo, Agua-Blanca-de-Iturbide (1–2/11) &amp; Jalisco, Zapopan (5–10/11)</h3>
+              <p class="timeline__host">Coordinated by Club Xel &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2023</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Spain — Catalunya, Sant-Joan-de-les-Abadesses</h3>
+              <p class="timeline__host">Coordinated by FCE (Federació Catalana d'Espeleologia) &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2022</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Brazil — Santa-Catarina, Praia-Grande</h3>
+              <p class="timeline__host">Coordinated by APKanyon &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item timeline__item--void reveal">
+            <span class="timeline__year">2021</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Spain — Catalunya, Sant-Joan-de-les-Abadesses</h3>
+              <p class="timeline__host">Canceled</p>
+            </div>
+          </li>
+          <li class="timeline__item timeline__item--void reveal">
+            <span class="timeline__year">2020</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Greece — Kriti, Ierápetras</h3>
+              <p class="timeline__host">Canceled</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2019</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Colombia — Antioquia, Taparto + San-Félix + San-Carlos + Jardín</h3>
+              <p class="timeline__host">Coordinated by Asociación Colombiana de Cañonismo, ASOSUP (Asociación Colombiana de SUPerviviencia) &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2018</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Switzerland — Ticino, Tenero</h3>
+              <p class="timeline__host">Coordinated by Canyonland &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2017</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">France — Île de la Réunion</h3>
+              <p class="timeline__host">Coordinated by FFS (Fédération Française de Spéléologie) &amp; EFC (École Française de Canyon) &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2016</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Portugal — Açores, Flores, Santa-Cruz-das-Flores</h3>
+              <p class="timeline__host">Coordinated by CIMA (Canyoning International Meeting in the Azores), Desnível &amp; FIC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2015</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">USA — Colorado, Ouray</h3>
+              <p class="timeline__host">Coordinated by OCC (Ouray Canyon Coalition), CAC (Coalition of American Canyoneers) &amp; FIC — then still named IAAC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2014</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Spain — Islas Baleares, Mallorca</h3>
+              <p class="timeline__host">Coordinated by Balearik &amp; FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2013</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Portugal — Madeira</h3>
+              <p class="timeline__host">Coordinated by FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2012</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Brazil — Minas-Gerais, Serra-da-Canastra</h3>
+              <p class="timeline__host">Coordinated by GBCAN (Grupo Brasileiro de Canionismo)</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2011</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Nepal</h3>
+              <p class="timeline__host">Coordinated by NCA (Nepal Canyoning Association), HCT (Himalayan Canyon Team) &amp; X-Canyoning Team</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2010</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Italy — Sardinia</h3>
+              <p class="timeline__host">Coordinated by AIC (Associazione Italiana Canyoning)</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2009</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Cabo Verde — Santo-Antão</h3>
+              <p class="timeline__host">Coordinated by FFS &amp; EFC, FEC (Federación Española de Campings) &amp; FEEC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2008</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">France — Isère, Méaudre</h3>
+              <p class="timeline__host">Coordinated by FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2008</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">USA — Utah, Escalante + Springdale</h3>
+              <p class="timeline__host">Coordinated by ACA (American Canyoneering Association)</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2007</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Greece — Phthiotis, Loutra Ypatis</h3>
+              <p class="timeline__host">Coordinated by ACA, Hellas Canyon &amp; FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2006</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Greece — Kriti, Mistros</h3>
+              <p class="timeline__host">Coordinated by ACA &amp; FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2005</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Mexico — Nuevo-León, Monterrey</h3>
+              <p class="timeline__host">Coordinated by ACA &amp; FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2004</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Spain — Aragón</h3>
+              <p class="timeline__host">Coordinated by FFS &amp; EFC</p>
+            </div>
+          </li>
+          <li class="timeline__item timeline__item--first reveal">
+            <span class="timeline__year">2003</span>
+            <div class="timeline__body">
+              <h3 class="timeline__place">Spain — Aragón</h3>
+              <p class="timeline__host">The very first RIC — coordinated by FAE (Federación Aragonesa de Espeleología) &amp; FFS &amp; EFC</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CTA / CONTACT ================= -->
+    <section class="section cta" id="contact">
+      <div class="container cta__box reveal">
+        <div class="cta__text">
+          <p class="section__kicker">Get involved</p>
+          <h2 class="section__title">Bring your association on board</h2>
+          <p>Applications are open to associations of recreational canyoneers in every language of the federation.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="https://ficanyon.org/fic-application/">Apply for membership</a>
+          <a class="btn btn--ghost" href="https://ficanyon.org/contact-fic/">Contact the FIC</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">FIC</span>
+        <p class="footer__tagline">Fédération Internationale de Canyonisme — the Federation for International Canyoning.</p>
+        <a class="footer__social" href="https://www.facebook.com/FICanyoning" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#board">Board of Directors</a></li>
+          <li><a href="index.html#ric">RIC</a></li>
+          <li><a href="index.html#ric-history">RIC History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="canyon-rating.html">Canyon Rating</a></li>
+          <li><a href="whistle-signals.html">Whistle Signals</a></li>
+          <li><a href="marking-rope.html">Marking Rope</a></li>
+          <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          <li><a href="http://canyonaccident.org">Canyon Accident</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Federation</h4>
+        <ul>
+          <li><a href="index.html#members">Member Associations</a></li>
+          <li><a href="https://ficanyon.org/fic-members/">FIC Members</a></li>
+          <li><a href="https://ficanyon.org/fic-board-of-directors/">Board of Directors</a></li>
+          <li><a href="https://ficanyon.org/fic-application/">Membership application</a></li>
+          <li><a href="https://ficanyon.org/contact-fic/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© 2026 Fédération Internationale de Canyonisme. All rights reserved.</p>
+      <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">×</button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

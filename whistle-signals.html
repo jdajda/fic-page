@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whistle Signals — FIC</title>
+  <meta name="description" content="The international whistle communication system in canyoning: one whistle, five signals — stop, OK, down rope, rope up and emergency.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FIC home">
+        <span class="nav__logo-mark">FIC</span>
+        <span class="nav__logo-text">
+          <strong>Fédération Internationale</strong>
+          <small>de Canyonisme</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#mission">Mission</a></li>
+        <li><a href="index.html#board">Board</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li class="nav__item--sub is-current">
+          <button type="button" class="nav__sub-toggle" aria-expanded="false" aria-controls="navTools">
+            Tools <span class="nav__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__sub" id="navTools">
+            <li><a href="tools.html">All tools</a></li>
+            <li><a href="canyon-rating.html">Canyon Rating</a></li>
+            <li><a href="whistle-signals.html" class="is-active" aria-current="page">Whistle Signals</a></li>
+            <li><a href="marking-rope.html">Marking Rope</a></li>
+            <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#ric">RIC</a></li>
+        <li><a href="index.html#contact" class="btn btn--small">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HEAD ================= -->
+    <section class="pagehead">
+      <div class="pagehead__bg" style="background-image:url('https://images.unsplash.com/photo-1769175053708-cd33e4959180?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="pagehead__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="tools.html">Tools</a>
+          <span aria-hidden="true">/</span>
+          <span class="crumbs__current">Whistle Signals</span>
+        </nav>
+        <h1 class="pagehead__title">Whistle Signals</h1>
+        <p class="pagehead__lead">In a gorge, your voice stops at the first bend. The whistle is the one sound that travels — around a corner, along a wall, through water noise. This is the code the international community agreed on so that any group can be understood by any other group.</p>
+        <div class="pagehead__chips">
+          <span class="chip chip--accent">1 whistle</span>
+          <span class="chip">5 signals</span>
+          <span class="chip">Any language</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SIGNALS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">The code</p>
+          <h2 class="section__title">Five signals, one whistle</h2>
+          <p class="section__lead">Count the blasts. That is the entire system — the meaning lives in the number, not in a vocabulary, so it needs no translation.</p>
+        </div>
+
+        <div class="whistle__grid">
+          <article class="whistle__card reveal">
+            <div class="whistle__blasts" aria-hidden="true">
+              <span class="blast"></span>
+            </div>
+            <p class="whistle__count">1×</p>
+            <h3 class="whistle__name">Stop</h3>
+            <p class="whistle__note">Hold position. Everyone freezes where they are.</p>
+          </article>
+
+          <article class="whistle__card reveal">
+            <div class="whistle__blasts" aria-hidden="true">
+              <span class="blast"></span>
+              <span class="blast"></span>
+            </div>
+            <p class="whistle__count">2×</p>
+            <h3 class="whistle__name">OK</h3>
+            <p class="whistle__note">Acknowledgement. Also used in Italy to mean <em>down rope</em>.</p>
+          </article>
+
+          <article class="whistle__card reveal">
+            <div class="whistle__blasts" aria-hidden="true">
+              <span class="blast"></span>
+              <span class="blast"></span>
+              <span class="blast"></span>
+            </div>
+            <p class="whistle__count">3×</p>
+            <h3 class="whistle__name">Down Rope</h3>
+            <p class="whistle__note">Rope is ready to descend. Also used in Italy to mean <em>OK</em>.</p>
+          </article>
+
+          <article class="whistle__card reveal">
+            <div class="whistle__blasts" aria-hidden="true">
+              <span class="blast"></span>
+              <span class="blast"></span>
+              <span class="blast"></span>
+              <span class="blast"></span>
+            </div>
+            <p class="whistle__count">4×</p>
+            <h3 class="whistle__name">Rope Up</h3>
+            <p class="whistle__note">The rope is clear above you. Come up.</p>
+          </article>
+
+          <article class="whistle__card whistle__card--alert reveal">
+            <div class="whistle__blasts" aria-hidden="true">
+              <span class="blast"></span>
+              <span class="blast"></span>
+              <span class="blast"></span>
+              <span class="blast--gap"></span>
+              <span class="blast"></span>
+              <span class="blast"></span>
+              <span class="blast"></span>
+            </div>
+            <p class="whistle__count">3× … 3×</p>
+            <h3 class="whistle__name">Emergency</h3>
+            <p class="whistle__note">Repeated group of blasts, with a pause between groups.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW TO USE ================= -->
+    <section class="section rating">
+      <div class="container">
+        <h2 class="subhead reveal">Using the code</h2>
+
+        <div class="prose reveal">
+          <p>It is important to coordinate among all group members <strong>before the start of the descent</strong> the communication system used. Agree the code out loud, at the top, while everyone can still hear each other — and agree who signals what.</p>
+        </div>
+
+        <div class="callout callout--warn reveal" style="margin-top:26px">
+          <span class="callout__icon" aria-hidden="true">⚠️</span>
+          <div>
+            <h3 class="callout__title">Be careful</h3>
+            <p>The whistle communication code used in Italy is a little bit different: there, 2× means <em>down rope</em> and 3× means <em>OK</em>. Confirm which convention your group is using before you go down.</p>
+          </div>
+        </div>
+
+        <div class="mission__grid" style="margin-top:clamp(32px,4vw,48px)">
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">🗣️</span>
+            <h3>Brief the group</h3>
+            <p>Say the code aloud before anyone is clipped in. Assume no shared language; the point of a whistle is that it does not need one.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">👂</span>
+            <h3>Answer every call</h3>
+            <p>Every signal expects a reply. A call with no acknowledgement is an unanswered call — treat it as a problem, not a pause.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">🚨</span>
+            <h3>Reserve the alarm</h3>
+            <p>The emergency pattern is the only signal that repeats. Keep it for real emergencies so that it always means something.</p>
+          </article>
+        </div>
+
+        <div class="callout reveal" style="margin-top:clamp(32px,4vw,48px)">
+          <span class="callout__icon" aria-hidden="true">🖼️</span>
+          <div>
+            <h3 class="callout__title">Original plate</h3>
+            <p>The official illustrated version of this system, produced by the FIC, is available as a printable image: <a href="https://ficanyon.org/wp-content/uploads/2024/01/FIC_Whistle-communication-1-scaled.jpg" target="_blank" rel="noopener">FIC whistle communication plate ↗</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEXT / PREV ================= -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <nav class="pagenav reveal" aria-label="Tool navigation">
+          <a class="pagenav__link" href="canyon-rating.html">
+            <span class="pagenav__dir">← Previous</span>
+            <span class="pagenav__name">Canyon Rating</span>
+          </a>
+          <a class="pagenav__link pagenav__link--next" href="marking-rope.html">
+            <span class="pagenav__dir">Next →</span>
+            <span class="pagenav__name">Marking Rope</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">FIC</span>
+        <p class="footer__tagline">Fédération Internationale de Canyonisme — the Federation for International Canyoning.</p>
+        <a class="footer__social" href="https://www.facebook.com/FICanyoning" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#board">Board of Directors</a></li>
+          <li><a href="index.html#ric">RIC</a></li>
+          <li><a href="index.html#ric-history">RIC History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="canyon-rating.html">Canyon Rating</a></li>
+          <li><a href="whistle-signals.html">Whistle Signals</a></li>
+          <li><a href="marking-rope.html">Marking Rope</a></li>
+          <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          <li><a href="http://canyonaccident.org">Canyon Accident</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Federation</h4>
+        <ul>
+          <li><a href="index.html#members">Member Associations</a></li>
+          <li><a href="https://ficanyon.org/fic-members/">FIC Members</a></li>
+          <li><a href="https://ficanyon.org/fic-board-of-directors/">Board of Directors</a></li>
+          <li><a href="https://ficanyon.org/fic-application/">Membership application</a></li>
+          <li><a href="https://ficanyon.org/contact-fic/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© 2026 Fédération Internationale de Canyonisme. All rights reserved.</p>
+      <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

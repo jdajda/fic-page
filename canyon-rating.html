@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canyon Rating System — FIC</title>
+  <meta name="description" content="The international canyon rating system of the FIC: vertical difficulty (v1–v7), aquatic difficulty (a1–a7) and commitment (I–VI), written as a single code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FIC home">
+        <span class="nav__logo-mark">FIC</span>
+        <span class="nav__logo-text">
+          <strong>Fédération Internationale</strong>
+          <small>de Canyonisme</small>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#mission">Mission</a></li>
+        <li><a href="index.html#board">Board</a></li>
+        <li><a href="index.html#members">Members</a></li>
+        <li class="nav__item--sub is-current">
+          <button type="button" class="nav__sub-toggle" aria-expanded="false" aria-controls="navTools">
+            Tools <span class="nav__caret" aria-hidden="true"></span>
+          </button>
+          <ul class="nav__sub" id="navTools">
+            <li><a href="tools.html">All tools</a></li>
+            <li><a href="canyon-rating.html" class="is-active" aria-current="page">Canyon Rating</a></li>
+            <li><a href="whistle-signals.html">Whistle Signals</a></li>
+            <li><a href="marking-rope.html">Marking Rope</a></li>
+            <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#ric">RIC</a></li>
+        <li><a href="index.html#contact" class="btn btn--small">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE HEAD ================= -->
+    <section class="pagehead">
+      <div class="pagehead__bg" style="background-image:url('https://images.unsplash.com/photo-1770174079914-c5b62a24f072?fm=jpg&q=70&w=2000&auto=format&fit=crop&ixlib=rb-4.1.0');"></div>
+      <div class="pagehead__inner container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="tools.html">Tools</a>
+          <span aria-hidden="true">/</span>
+          <span class="crumbs__current">Canyon Rating</span>
+        </nav>
+        <h1 class="pagehead__title">Canyon Rating System</h1>
+        <p class="pagehead__lead">One code, three numbers. The FIC rating describes how hard a canyon is to descend vertically, how hard it is in the water, and how far you are committing yourself — independently of each other.</p>
+        <div class="pagehead__chips">
+          <span class="chip chip--accent">Open scales</span>
+          <span class="chip">v1–v7</span>
+          <span class="chip">a1–a7</span>
+          <span class="chip">I–VI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOTATION ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Notation</p>
+          <h2 class="section__title">How a rating is written</h2>
+        </div>
+
+        <div class="rating__code reveal" aria-label="Rating notation example">
+          <div class="rating__code-part">
+            <span class="rating__code-letter">v</span>
+            <span class="rating__code-num">2</span>
+            <span class="rating__code-label">Vertical difficulty<br>1–7</span>
+          </div>
+          <span class="rating__code-dot">·</span>
+          <div class="rating__code-part">
+            <span class="rating__code-letter">a</span>
+            <span class="rating__code-num">3</span>
+            <span class="rating__code-label">Aquatic difficulty<br>1–7</span>
+          </div>
+          <span class="rating__code-dot">·</span>
+          <div class="rating__code-part">
+            <span class="rating__code-letter">C</span>
+            <span class="rating__code-num">III</span>
+            <span class="rating__code-label">Commitment &amp; scope<br>I–VI</span>
+          </div>
+        </div>
+
+        <div class="prose reveal">
+          <p>Canyons are rated as follows: the letter <strong>v</strong> followed by one Arabic number from 1 to 7 for the difficulty in the vertical character; the letter <strong>a</strong> followed by one Arabic number from 1 to 7 for the difficulty in the watery character; and one Roman numeral from I to VI for commitment and scope.</p>
+          <p>Canyons rated <em>v2 a3 III</em>, <em>v5 a6 V</em> or <em>v4 a5 III</em>. For simplification we write <strong>2.3.III</strong>, <strong>5.6.V</strong> or <strong>4.5.III</strong>.</p>
+        </div>
+
+        <div class="callout reveal" style="margin-top:26px">
+          <span class="callout__icon" aria-hidden="true">ℹ️</span>
+          <div>
+            <h3 class="callout__title">How to read a rating</h3>
+            <p>Only one of the criteria in each column determines membership in a difficulty category. On a route, avoiding an obstacle or using a specific technique — for example guided abseiling — may result in a lower rating. Jumps are generally considered optional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALIBRATION ================= -->
+    <section class="section rating">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__kicker">Calibration</p>
+          <h2 class="section__title">What the rating assumes</h2>
+          <p class="section__lead">A rating only means something if you know the conditions it was written for.</p>
+        </div>
+
+        <div class="mission__grid">
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">💧</span>
+            <h3>Average flow</h3>
+            <p>The quotation is valid for an average or ordinary flow, in the usual period of practice — thus at a relatively low level, without necessarily being at low water level.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">👥</span>
+            <h3>A group of five</h3>
+            <p>It is calibrated for a group of five people, in a situation of discovery of the canyon, whose level of practice is in adequacy with the technical level of the canyon.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">🧭</span>
+            <h3>Habitual, reasoned practice</h3>
+            <p>It is intended for habitual and reasoned practice, with a view to safety and efficiency of movement. A personal search for an increase in difficulty will not add anything to the initial rating.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VERTICAL ================= -->
+    <section class="section" id="vertical">
+      <div class="container">
+        <h2 class="subhead reveal">V — Vertical character</h2>
+        <div class="rating__levels">
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v1</span> Very easy</h3>
+            <ul>
+              <li>No vertical obstacle required</li>
+              <li>No recall and no handrail</li>
+              <li>Rope and harness not necessary for normal safe progression</li>
+              <li>No climbing / unclimbing passages</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v2</span> Easy</h3>
+            <ul>
+              <li>Easy abseiling ≤ 10 m</li>
+              <li>Handrail</li>
+              <li>Easy climbing / unclimbing passage with little exposure</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v3</span> Little difficult</h3>
+            <ul>
+              <li>Low-flow verticals</li>
+              <li>Reception in a basin with swimming in calm water</li>
+              <li>Simple abseiling, less than 30 m</li>
+              <li>A series of rappels separated by landings allowing the grouping of people</li>
+              <li>Easy handrail</li>
+              <li>Technical walk — slippery, obstacle</li>
+              <li>Climbing / unclimbing passages up to 3c, not very exposed, may require rope</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v4</span> Somewhat difficult</h3>
+            <ul>
+              <li>Low to medium flow verticals that can begin to cause imbalance or blockage</li>
+              <li>Recall of difficult access and/or greater than 30 m</li>
+              <li>Series of abseils on the wall with comfortable belays</li>
+              <li>Rope friction</li>
+              <li>Difficult handrail</li>
+              <li>Non-visible reminder of the start</li>
+              <li>Reception in a basin with water movement</li>
+              <li>Climbing / descending passages up to 4c or A0, exposed and/or requiring belay</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v5</span> Difficult</h3>
+            <ul>
+              <li>Medium to high flow rate verticals</li>
+              <li>Difficult recall requiring trajectory and/or balance management</li>
+              <li>A series of abseils on the wall with aerial relays</li>
+              <li>Crossing a suspended overhanging basin during the descent</li>
+              <li>Slippery surface or presence of an obstacle</li>
+              <li>Difficult to remove the rope</li>
+              <li>Exposed climbing / descending passages, up to 5c or A1</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v6</span> Very difficult</h3>
+            <ul>
+              <li>High to very high flow rate verticals</li>
+              <li>Very difficult recall, requiring effective management of trajectory and/or balance</li>
+              <li>Difficult relay installation — delicate natural mooring, e.g. jammed block</li>
+              <li>Difficult access to the start of the abseil</li>
+              <li>Exposed climbing / descending passage, up to 6a or A2</li>
+              <li>Very slippery or unstable surface</li>
+              <li>Highly emulsified inlet bowl</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">v7</span> Extremely difficult</h3>
+            <ul>
+              <li>Verticals of very strong to extremely strong flow</li>
+              <li>Extremely difficult crossing requiring anticipation and specific management of rope, trajectory, balance, support and rhythm</li>
+              <li>Exposed climbing / descending passages, above 6a or A2</li>
+              <li>Limited visibility and frequent obstacles</li>
+              <li>Passage through a basin with powerful water movements</li>
+              <li>Breathing control — passage in apnea</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AQUATIC ================= -->
+    <section class="section rating" id="aquatic">
+      <div class="container">
+        <h2 class="subhead reveal">A — Aquatic character</h2>
+        <div class="rating__levels">
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a1</span> Very easy</h3>
+            <ul>
+              <li>No water or walking in calm water</li>
+              <li>Swimming optional</li>
+              <li>No jumping</li>
+              <li>No slide</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a2</span> Easy</h3>
+            <ul>
+              <li>Swimming of 10 m maximum in calm water</li>
+              <li>Easy jump less than 3 m</li>
+              <li>Short or low slope slide</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a3</span> Little difficult</h3>
+            <ul>
+              <li>Swimming not exceeding 30 m in calm water</li>
+              <li>Progression in weak current</li>
+              <li>Easy jump from 3 to 5 m</li>
+              <li>Long or medium slope slide</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a4</span> Somewhat difficult</h3>
+            <ul>
+              <li>Prolonged immersion resulting in a significant heat loss</li>
+              <li>Progression in medium current</li>
+              <li>Wide siphon of less than 1 m in length and/or depth</li>
+              <li>Easy jump from 5 to 8 m</li>
+              <li>Difficult jump less than 5 m</li>
+              <li>Large slide or steep slide</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a5</span> Difficult</h3>
+            <ul>
+              <li>Prolonged immersion in cold water resulting in significant heat loss</li>
+              <li>Progression in a fairly strong current, which can disrupt swimming trajectories, bins, stops or resumptions</li>
+              <li>Obligatory difficulties linked to specific white water phenomena — whirlpools, drifting</li>
+              <li>Wide siphon up to 2 m in length and/or depth</li>
+              <li>Easy jump from 8 to 10 m</li>
+              <li>Difficult jump from 5 to 8 m</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a6</span> Very difficult</h3>
+            <ul>
+              <li>Progression in strong current making swimming trajectories, bins, stops or resumptions difficult to execute</li>
+              <li>Marked water movements — drifting, backwash, waves, whirlpools</li>
+              <li>Wide siphon up to 3 m deep and/or long</li>
+              <li>Technical siphon up to a maximum of 1 m, with possible current or pathway</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">a7</span> Extremely difficult</h3>
+            <ul>
+              <li>Progression in a very strong current making swimming trajectories, bins, stops or resumptions extremely difficult</li>
+              <li>Violent water movements that can lead to a prolonged blockage of the canyoneer</li>
+              <li>Siphon more than 3 m long and/or deep</li>
+              <li>Technical and engaged siphon of more than 1 m with current or path, or without visibility</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMITMENT ================= -->
+    <section class="section" id="commitment">
+      <div class="container">
+        <h2 class="subhead reveal">C — Commitment &amp; scope</h2>
+        <p class="section__lead reveal" style="margin-bottom:26px">The third column has nothing to do with technique. It answers one question: how far in can you be, and how long does it take to get out?</p>
+        <div class="rating__levels rating__levels--commit">
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">I</span> Quick exit</h3>
+            <ul>
+              <li>Possibility to get out of the flood easily and quickly</li>
+              <li>Easy escape routes present on all parts of the course</li>
+              <li>Total time — approach, descent, return — less than 2 hours</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">II</span> 15 minutes</h3>
+            <ul>
+              <li>Possibility to get out of the flood within 15 minutes of progress at most</li>
+              <li>Escape within ½ hour of progress at most</li>
+              <li>Total time between 2 and 4 hours</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">III</span> ½ hour</h3>
+            <ul>
+              <li>Possibility to get out of the flood within ½ hour of progress at most</li>
+              <li>Escape within 1 hour of progress at most</li>
+              <li>Total time between 4 and 8 hours</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">IV</span> 1 hour</h3>
+            <ul>
+              <li>Possibility to get out of the flood within 1 hour of progress at most</li>
+              <li>Escape within 2 hours of progress at most</li>
+              <li>Total time between 8 hours and 1 day</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">V</span> 2 hours</h3>
+            <ul>
+              <li>Possibility to get out of the flood within 2 hours at most</li>
+              <li>Escape within 4 hours of progress at most</li>
+              <li>Total time between 1 and 2 days</li>
+            </ul>
+          </article>
+          <article class="rating__level reveal">
+            <h3><span class="rating__badge">VI</span> 2+ hours</h3>
+            <ul>
+              <li>Possibility to get out of the flood in more than 2 hours of progression</li>
+              <li>Escape requires more than 4 hours of progress</li>
+              <li>Total time greater than 2 days</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEXT / PREV ================= -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="rating__actions reveal" style="margin-bottom:0">
+          <a class="btn btn--ghost" href="https://ficanyon.org/international-canyon-rating-system-english/" target="_blank" rel="noopener">Original English version ↗</a>
+          <a class="btn btn--ghost" href="https://ficanyon.org/international-canyon-rating-system-french/" target="_blank" rel="noopener">Version française ↗</a>
+        </div>
+
+        <nav class="pagenav reveal" aria-label="Tool navigation">
+          <a class="pagenav__link" href="tools.html">
+            <span class="pagenav__dir">← Back</span>
+            <span class="pagenav__name">All tools</span>
+          </a>
+          <a class="pagenav__link pagenav__link--next" href="whistle-signals.html">
+            <span class="pagenav__dir">Next →</span>
+            <span class="pagenav__name">Whistle Signals</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">FIC</span>
+        <p class="footer__tagline">Fédération Internationale de Canyonisme — the Federation for International Canyoning.</p>
+        <a class="footer__social" href="https://www.facebook.com/FICanyoning" target="_blank" rel="noopener">Follow us on Facebook ↗</a>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#board">Board of Directors</a></li>
+          <li><a href="index.html#ric">RIC</a></li>
+          <li><a href="index.html#ric-history">RIC History</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="canyon-rating.html">Canyon Rating</a></li>
+          <li><a href="whistle-signals.html">Whistle Signals</a></li>
+          <li><a href="marking-rope.html">Marking Rope</a></li>
+          <li><a href="harnesses.html">Harnesses &amp; Anchors</a></li>
+          <li><a href="http://canyonaccident.org">Canyon Accident</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Federation</h4>
+        <ul>
+          <li><a href="index.html#members">Member Associations</a></li>
+          <li><a href="https://ficanyon.org/fic-members/">FIC Members</a></li>
+          <li><a href="https://ficanyon.org/fic-board-of-directors/">Board of Directors</a></li>
+          <li><a href="https://ficanyon.org/fic-application/">Membership application</a></li>
+          <li><a href="https://ficanyon.org/contact-fic/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>© 2026 Fédération Internationale de Canyonisme. All rights reserved.</p>
+      <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
